@@ -63,6 +63,26 @@ namespace WinCaffeine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
+        internal static System.Drawing.Icon aero_off {
+            get {
+                object obj = ResourceManager.GetObject("aero_off", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon aero_on {
+            get {
+                object obj = ResourceManager.GetObject("aero_on", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
         internal static System.Drawing.Icon coffee_empty {
             get {
                 object obj = ResourceManager.GetObject("coffee_empty", resourceCulture);
@@ -136,6 +156,26 @@ namespace WinCaffeine.Properties {
         internal static System.Drawing.Icon luna_on {
             get {
                 object obj = ResourceManager.GetObject("luna_on", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap main_2x {
+            get {
+                object obj = ResourceManager.GetObject("main@2x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon sizetest {
+            get {
+                object obj = ResourceManager.GetObject("sizetest", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

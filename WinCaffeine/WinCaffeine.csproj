@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WinCaffeine</RootNamespace>
     <AssemblyName>WinCaffeine</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -41,11 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
     <Reference Include="System.Management" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -61,11 +58,21 @@
     </Compile>
     <Compile Include="DarkModeWatcher.cs" />
     <Compile Include="ExtenstionMethods.cs" />
+    <Compile Include="FancyLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="LinkLabelEx.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IconHelper.cs" />
+    <Compile Include="UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +86,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -91,31 +102,35 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\coffee_empty.ico" />
+    <EmbeddedResource Include="Resources\coffee_empty.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\coffee_full.ico" />
+    <EmbeddedResource Include="Resources\coffee_full.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fluent_off_b.ico" />
+    <EmbeddedResource Include="Resources\fluent_off_b.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fluent_off_w.ico" />
+    <EmbeddedResource Include="Resources\fluent_off_w.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fluent_on_b.ico" />
+    <EmbeddedResource Include="Resources\fluent_on_b.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fluent_on_w.ico" />
+    <EmbeddedResource Include="Resources\fluent_on_w.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\luna_off.ico" />
+    <EmbeddedResource Include="Resources\luna_off.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\luna_on.ico" />
+    <EmbeddedResource Include="Resources\luna_on.ico" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="main.ico" />
+    <EmbeddedResource Include="Resources\aero_off.ico" />
+    <EmbeddedResource Include="Resources\aero_on.ico" />
+    <EmbeddedResource Include="Resources\sizetest.ico" />
+    <None Include="Resources\main%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
